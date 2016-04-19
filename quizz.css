@@ -1,0 +1,23 @@
+#bannerquizz{
+	width: 100%;
+	height: 250px;
+}
+body{
+	background-color: gray;
+
+}
+#q1{
+	margin-top: 10px;
+	width:100%;
+	height: 300px;
+}
+h2{
+	text-align: center;
+	color: white;
+	
+}
+img{
+	border-radius:5px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+}

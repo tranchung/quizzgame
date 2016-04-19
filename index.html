@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quizz</title>
+	<script src="jquery-2.2.2.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap.min.css" >
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="quizz.css">
+
+	
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		
+<div class="row">
+			<div class="col-md-12"><img id="bannerquizz" src="bg-chemistry.jpg"></div>
+		</div>
+		<audio id="sound1" src="canthan.mp4" preload="auto"></audio>
+		<audio id="sound2" src="saicmnr.mp4" preload="auto"></audio>
+		<audio id="sound3" src="nghilau.mp4" preload="auto"></audio>
+		<audio id="sound4" src="nghichua.mp4" preload="auto"></audio>
+		<audio id="sound5" src="hello.mp4" preload="auto"></audio>
+		<audio id="sound6" src="chuancmnr.mp4" preload="auto"></audio>
+		<audio id="sound7" src="caunaysai.mp4" preload="auto"></audio>
+		<audio id="sound8" src="caunaydung.mp4" preload="auto"></audio>
+  	
+	
+  		
+		<div id="quiz1" >
+
+			<div class="row">
+				<div class="col-md-6"><img id="q1"img src="hinh-anh-hai-huoc-p2-10.jpg"></div>
+				<div class="col-md-6">
+					<h3> Câu hỏi thứ 1:Con cua đỏ dài 10 cm chạy đua với con cua xanh dài 15cm.Con nào về đích trước?</h3>
+					<div class="col-md-6"><h3><input onmouseover ="document.getElementById('sound1').play();" type="radio" name="r1" ></input>Cua đỏ </h3></div>
+					<div class="col-md-6"><h3><input onclick ="document.getElementById('sound7').play();"   id="trueanswear1" type="radio" name="r1" ></input>Cua xanh</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound7').play();"  type="radio" name="r1" ></input>2 con chạy ngang nhau</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound8').play();"  type="radio" name="r1" ></input>có chúa mới biết</h3></div>
+					<div class=col-md-6> <button type="button" class="btn btn-info btn-lg" onclick="quizz1()"><span class="glyphicon glyphicon-fast-forward"></span>Câu Kế Tiếp
+					</button></div>
+					<div class=col-md-6> <button type="button" class="btn btn-danger btn-lg">
+						Score:<span class="score">0</span>
+					</button></div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+			<div id="quiz2" hidden>
+
+			<div class="row">
+				<div class="col-md-6"><img id="q1"img src="114408_5.jpg"></div>
+				<div class="col-md-6">
+					<h3> Câu hỏi thứ 2:Có 1 con trâu. Đầu nó thì hướng về hướng mặt trời mọc, nó quay trái 2 vòng sau đó quay ngược lại sau đó lại quay phải hay vòng hỏi cái đuôi của nó chỉ hướng nào?</h3>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound8').play();"   type="radio" name="r2" ></input>Mặt Trời lặn </h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound1').play();"  id="trueanswear2" type="radio" name="r2" ></input>Không có câu nào đúng</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound6').play();"  type="radio" name="r2" ></input>Mặt Trời Mọc</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound3').play();"  type="radio" name="r2" ></input>Hướng Đông</h3></div>
+					<div class=col-md-6> <button type="button" class="btn btn-info btn-lg" onclick="quizz2()"><span class="glyphicon glyphicon-fast-forward"></span> Câu Kế Tiếp
+					</button></div>
+					<div class=col-md-6> <button type="button" class="btn btn-danger btn-lg">
+						Score:<span class="score"></span>
+					</button></div>
+				</div>
+				
+			</div>
+
+		</div>
+
+	<div id="quiz3" hidden >
+
+			<div class="row">
+				<div class="col-md-6"><img id="q1"img src="fd78e9165292423.5601641dc8254.jpg"></div>
+				<div class="col-md-6">
+					<h3> Câu hỏi thứ 3:Loại nước giải khát nào chứa sắt và canxi?</h3>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound7').play();"  id="trueanswear3" type="radio" name="r1" ></input>Cafe </h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound3').play();"  type="radio" name="r1" ></input>Coca</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound4').play();"  type="radio" name="r1" ></input>Bò Húc</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound1').play();"  type="radio" name="r1" ></input>Fanta</h3></div>
+					<div class=col-md-6> <button type="button" class="btn btn-info btn-lg" onclick="quizz3()"><span class="glyphicon glyphicon-fast-forward"></span> Câu Kế Tiếp
+					</button></div>
+					<div class=col-md-6> <button type="button" class="btn btn-danger btn-lg">
+						Score:<span class="score"></span>
+					</button></div>
+				</div>
+				
+			</div>
+		</div>
+
+	<div id="quiz4" hidden>
+
+			<div class="row">
+				<div class="col-md-6"><img id="q1"img src="anh-dong-vui-xe-ba-dao.GIF"></div>
+				<div class="col-md-6">
+					<h3> Câu hỏi thứ 4:Môn gì càng thắng càng thua ?</h3>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound8').play();"  type="radio" name="r1" ></input>Môn Võ </h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound7').play();"  type="radio" name="r1" ></input>Bóng Đá</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound1').play();"  type="radio" name="r1" ></input>Tennis</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound4').play();"  id="trueanswear4" type="radio" name="r1" ></input>Đua Xe Đạp</h3></div>
+					<div class=col-md-6> <button type="button" class="btn btn-info btn-lg" onclick="quizz4()"><span class="glyphicon glyphicon-fast-forward"></span> Câu Kế Tiếp
+					</button></div>
+					<div class=col-md-6> <button type="button" class="btn btn-danger btn-lg">
+						Score:<span class="score">0</span>
+					</button></div>
+				</div>
+				
+			</div>
+		</div>
+
+	<div id="quiz5"hidden >
+
+			<div class="row">
+				<div class="col-md-6"><img id="q1"img src="hinh-anh-hai-huoc-p2-12.jpg"></div>
+				<div class="col-md-6">
+					<h3> Câu hỏi thứ 5:Núi nào mà bị chặt ra từng khúc?</h3>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound4').play();"  type="radio" name="r1" ></input>núi Khúc</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound3').play();"  type="radio" name="r1" ></input>núi Nùng</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound2').play();"  id="trueanswear5" type="radio" name="r1" ></input>Thái Sơn</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound2').play();"  type="radio" name="r1" ></input>cả 3 câu đều sai</h3></div>
+					<div class=col-md-6> <button type="button" class="btn btn-info btn-lg" onclick="quizz5()"><span class="glyphicon glyphicon-fast-forward"></span> Câu Kế Tiếp
+					</button></div>
+					<div class=col-md-6> <button type="button" class="btn btn-danger btn-lg">
+						Score:<span class="score">0</span>
+					</button></div>
+				</div>
+				
+			</div>
+		</div>
+
+	<div id="quiz6" hidden >
+
+			<div class="row">
+				<div class="col-md-6"><img id="q1"img src="anh-dong-tho-nhat-phan.gif"></div>
+				<div class="col-md-6">
+					<h3> Câu hỏi thứ 6:Cái gì mà đi thì nằm, đứng cũng nằm, nhưng nằm lại đứng?</h3>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound1').play();"  type="radio" name="r1" ></input>môi</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound2').play();"  type="radio" name="r1" ></input>xe máy</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound3').play();"  id="trueanswear6" type="radio" name="r1" ></input>bàn chân</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound4').play();"  type="radio" name="r1" ></input>ôtô</h3></div>
+					<div class=col-md-6> <button type="button" class="btn btn-info btn-lg"onclick="quizz6()"><span class="glyphicon glyphicon-fast-forward"></span> Câu Kế Tiếp
+					</button></div>
+					<div class=col-md-6> <button type="button" class="btn btn-danger btn-lg">
+						Score:<span class="score">0</span>
+					</button></div>
+				</div>
+				
+			</div>
+		</div>
+
+
+			<div id="quiz7" hidden>
+
+			<div class="row">
+				<div class="col-md-6"><img id="q1"img src="anh-dong-gai-sexy.GIF"></div>
+				<div class="col-md-6">
+					<h3> Câu hỏi thứ 7:Càng chơi càng ra nuớc?</h3>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound6').play();"  type="radio" name="r1" ></input>Đua thuyển</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound7').play();"  type="radio" name="r1" ></input>Bóng bàn</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound8').play();"  id="trueanswear7" type="radio" name="r1" ></input>Chơi cờ</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound8').play();"  type="radio" name="r1" ></input>Chơi bài</h3></div>
+					<div class=col-md-6> <button type="button" class="btn btn-info btn-lg" onclick="quizz7()"><span class="glyphicon glyphicon-fast-forward"></span> Câu Kế Tiếp
+					</button></div>
+					<div class=col-md-6> <button type="button" class="btn btn-danger btn-lg">
+						Score:<span class="score">0</span>
+					</button></div>
+				</div>
+				
+			</div>
+		</div>
+
+
+			<div id="quiz8"hidden >
+
+			<div class="row">
+				<div class="col-md-6"><img id="q1"img src="su-tu.GIF"></div>
+				<div class="col-md-6">
+					<h3> Câu hỏi thứ 8:Một tội phạm bị kết án tử hình. Hắn ta phải chọn một trong ba căn phòng: phòng thứ nhất lửa cháy dữ dội, phòng thứ hai đầy những kẻ ám sát đang giương súng, và phòng thứ ba đầy sư tử nhịn đói trong ba năm,phòng thứ tư chứa đầy khí độc.Phòng nào an toàn nhất cho hắn?</h3>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound1').play();" id="trueanswear8" type="radio" name="r1" ></input>phòng 3</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound1').play();"  type="radio" name="r1" ></input>phòng 2 </h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound2').play();"  type="radio" name="r1" ></input>phòng 1 </h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound3').play();"  type="radio" name="r1" ></input>phòng 4 </h3></div>
+					<div class=col-md-6> <button  type="button" class="btn btn-info btn-lg" onclick="quizz8()"><span class="glyphicon glyphicon-fast-forward"></span> Câu Kế Tiếp
+					</button></div>
+					<div class=col-md-6> <button  type="button" class="btn btn-danger btn-lg">
+						Score:<span class="score">0</span>
+					</button></div>
+				</div>
+				
+			</div>
+		</div>
+
+			<div id="quiz9"hidden >
+
+			<div class="row">
+				<div class="col-md-6"><img id="q1"img src="hinh-anh-hai-huoc-phan-3.jpg"></div>
+				<div class="col-md-6">
+					<h3> Câu hỏi thứ 9:bà đó bả chết bả bay lên trời. Hỏi bà ấy chết năm bao nhiêu tuổi và tại sao bà ấy chết? 
+					</h3>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound6').play();"  type="radio" name="r1" ></input>71 tuổi-bị xe cán  </h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound7').play();"  type="radio" name="r1" ></input>72 tuổi-bị bò húc</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound8').play();"  id="trueanswear9" type="radio" name="r1" ></input>73 tuổi-bị bò đá</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound1').play();"  type="radio" name="r1" ></input>74 tuổi-bị ung thư</h3></div>
+					<div class=col-md-6> <button onclick="quiz9()" type="button" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-fast-forward"></span> Câu Kế Tiếp
+					</button></div>
+					<div class=col-md-6> <button type="button" class="btn btn-danger btn-lg" >
+						Score:<span class="score">0</span>
+					</button></div>
+				</div>
+				
+			</div>
+		</div>
+	<div id="quiz10" hidden>
+
+			<div class="row">
+				<div class="col-md-6"><img id="q1"img src="hinh-anh-hai-huoc-p2-14.jpg"></div>
+				<div class="col-md-6">
+					<h3>Câu hỏi số 10 :Có 1 chiếc thuyền tối đa là chỉ chở dc hai người, nếu thêm ng thứ 3 sẽ bị chìm ngay lập tức.Người ta trông thấy trên chiếc thuyền đó có ba thằng mỹ đen và ba thằng mỹ trắng ngồi trên chiếc thuyền đó mà ko bị chìm?Hỏi trên thuyền đó có bao nhiêu người </h3>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound1').play();"   type="radio" name="r1" checked></input>1 </h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound2').play();" id="trueanswear10"  type="radio" name="r1" ></input>2</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound3').play();"  type="radio" name="r1" ></input>3</h3></div>
+					<div class="col-md-6"><h3><input onclick="document.getElementById('sound4').play();"   type="radio" name="r1" ></input>4</h3></div>
+					<div class=col-md-6> <button type="button" class="btn btn-info btn-lg" onclick="quizz10()"><span class="glyphicon glyphicon-fast-forward"></span> Hoàn Thành
+					</button></div>
+					<div class=col-md-6> <button type="button" class="btn btn-danger btn-lg">
+						Score:<span class="score">0</span>
+					</button></div>
+				</div>
+				
+			</div>
+		</div>
+		<button class="btn btn-info btn-lg form-control" ></button></div>
+	</div>
+	<script>
+	var i = 0;
+	$('.score').html(i);
+		function quizz1(){
+			var check = document.getElementById("trueanswear1").checked
+			if (check == true ) {
+				document.getElementById('sound6').play();
+				i = i + 1;
+				$('.score').html(i);
+				alert("Chúc mừng bạn đã trả lời đúng!")
+				
+			}
+			else{document.getElementById('sound2').play();
+				alert(" Rất tiếc,bạn đã trả lời sai! Đáp án : Cua xanh.Cua đỏ bị luộc rồi sao chạy");}
+			$('#quiz1').hide();
+			$('#quiz2').show(2500);
+		}
+function quizz2(){
+			var check = document.getElementById("trueanswear2").checked
+			if (check == true ) {
+				document.getElementById('sound6').play();
+				i = i + 1;
+				$('.score').html(i);
+				alert("Chúc mừng bạn đã trả lời đúng!Đuôi nó chỉ xuống đất")
+			}
+			else{document.getElementById('sound2').play();
+				alert(" Rất tiếc,bạn đã trả lời sai!Đáp án 2:Vì Đuôi nó chỉ xuống đất")}
+			$('#quiz2').hide();
+			$('#quiz3').show(2500);
+		}
+		function quizz3(){
+			var check = document.getElementById("trueanswear3").checked
+			if (check == true ) {
+				document.getElementById('sound6').play();
+				i = i + 1;
+				$('.score').html(i);
+				alert("Chúc mừng bạn đã trả lời đúng!")
+			}
+			else{
+				document.getElementById('sound2').play();
+				alert(" Rất tiếc,bạn đã trả lời sai! Đáp án 1 Cafe: canxi = Ca,sắt=Fe ");}
+			$('#quiz3').hide();
+			$('#quiz4').show(2500);
+		}
+		function quizz4(){
+			var check = document.getElementById("trueanswear4").checked
+			if (check == true ) {
+				document.getElementById('sound6').play();
+				i = i + 1;
+				$('.score').html(i);
+				alert("Chúc mừng bạn đã trả lời đúng!")
+			}
+			else{
+				document.getElementById('sound2').play();
+				alert(" Rất tiếc,bạn đã trả lời sai! Đáp án 4:Đua xe đạp");}
+			$('#quiz4').hide();
+			$('#quiz5').show(2500);
+		}
+		function quizz5(){
+			var check = document.getElementById("trueanswear5").checked
+			if (check == true ) {
+				document.getElementById('sound6').play();
+				i = i + 1;
+				$('.score').html(i);
+				alert("Chúc mừng bạn đã trả lời đúng!")
+			}
+				else{document.getElementById('sound2').play();
+				alert(" Rất tiếc,bạn đã trả lời sai! Đáp án 3 : Thái Sơn");}
+			$('#quiz5').hide();
+			$('#quiz6').show(2500);
+		}
+		function quizz6(){
+			var check = document.getElementById("trueanswear6").checked
+			if (check == true ) {
+				document.getElementById('sound6').play();
+				i = i + 1;
+				$('.score').html(i);
+				alert("Chúc mừng bạn đã trả lời đúng!")
+			}
+				else{document.getElementById('sound2').play();
+				alert(" Rất tiếc,bạn đã trả lời sai! Đáp án 3: Bàn chân");}
+			$('#quiz6').hide();
+			$('#quiz7').show(2500);
+		}
+		function quizz7(){
+			var check = document.getElementById("trueanswear7").checked
+			if (check == true ) {
+				document.getElementById('sound6').play();
+				i = i + 1;
+				$('.score').html(i);
+				alert("Chúc mừng bạn đã trả lời đúng!")
+			}
+			else{document.getElementById('sound2').play();
+			alert(" Rất tiếc,bạn đã trả lời sai!Đáp án 3:Chơi cờ");}
+			$('#quiz7').hide();
+			$('#quiz8').show(2500);
+		}
+		function quizz8(){
+			var check = document.getElementById("trueanswear8").checked
+			if (check == true ) {
+				document.getElementById('sound6').play();
+				i = i + 1;
+				$('.score').html(i);
+				alert("Chúc mừng bạn đã trả lời đúng!");
+			}
+			else{document.getElementById('sound2').play();
+				alert(" Rất tiếc,bạn đã trả lời sai!Đáp án 1:phòng 3 vì sư tử 3 năm ko ăn thì chết hết rồi");}
+			$('#quiz8').hide();
+			$('#quiz9').show(2500);
+		}
+
+		function quiz9(){
+			var check = document.getElementById("trueanswear9").checked
+			if (check == true ) {
+				document.getElementById('sound6').play();
+				i = i + 1;
+				$('.score').html(i);
+				alert("Chúc mừng bạn đã trả lời đúng!");
+			}
+			else{
+				document.getElementById('sound2').play();
+			alert(" Rất tiếc,bạn đã trả lời sai! đáp án 3: bà đó=bò đá,bả bay=bảy ba");}
+			$('#quiz9').hide();
+			$('#quiz10').show(2500);
+		
+		}
+		
+		function quizz10(){
+			var check = document.getElementById("trueanswear10").checked
+			if (check == true ) {
+				document.getElementById('sound6').play();
+				i = i + 1;
+				$('.score').html(i);
+				alert("Chúc mừng bạn đã trả lời đúng!");
+			}
+			else{
+			document.getElementById('sound2').play();
+			alert(" Rất tiếc,bạn đã trả lời sai! Đáp án 2: có 2 người, người 1 là bố thằng da đen,người 2 là bố thằng da trắng");}
+			$('#quiz10').hide();
+			alert("Chúc mừng,bạn đã trả lời đúng "+i+ "  câu trắc nghiệm");
+		}
+
+
+
+</script>
+
+</body>
+</html>
